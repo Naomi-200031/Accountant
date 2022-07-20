@@ -28,7 +28,7 @@ function App() {
       <p>{t("buttonTwo")}{count}</p>
       </div>
       <div className='technology'>
-        <p>{t("techonology")}</p>
+        <p>{t("technology")}</p>
        </div>
        <div className='Icons'>
        <img className="Icons" src="./Clickup.png" alt="imagen"></img>

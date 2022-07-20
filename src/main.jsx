@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { GlobalProvider } from './context/Context';
 import { I18nextProvider } from "react-i18next";
-import i18n from "./config/localizacion/I18next";
+import i18n from "./config/location/I18next";
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

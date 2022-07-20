@@ -13,15 +13,70 @@ body{
   word-spacing: 10px;
   text-align: left;
   right: 15px;
-}
+  height: 50px;
+  align-items: center;
+  width: 90vw;
+  }
+
 
 .navigation a{
     color: rgb(255, 255, 255);
     margin-left: 20%;
     font-size: 15px;
-    
     font-family: Comic Sans MS;
   }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-u.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(133, 209, 71);
+    transform-origin: bottom left;
+    transition: transform 0.30s ease-out;
+    box-shadow: 0 0 10px rgb(133, 209, 71), 0 0 40px rgb(133, 209, 71), 0 0 80px rgb(133, 209, 71);
+
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+
 .card{
 display: inline-block;
 padding: 15px 30px;
@@ -38,6 +93,7 @@ font-family: 'Fascinate', cursive;
 font-family: 'Indie Flower', cursive;
 font-family: 'Satisfy', cursive;
 font-family: 'Shadows Into Light', cursive;
+margin-left: 200px;
 }
 
 .card:hover{
@@ -67,7 +123,7 @@ font-family: 'Shadows Into Light', cursive;
   margin-top: 80px;
   width: 300px;
   height: 300px;
-  margin-left: 650px;
+  margin-left: 850px;
 }
 
 .I:hover{
@@ -80,7 +136,7 @@ font-family: 'Shadows Into Light', cursive;
   text-align: left;
   text-align: justify;
   position: relative;
-  margin-left: 80px;
+  margin-left: 180px;
   top: -280px;
   font-family: 'Amatic SC', cursive;
   font-family: 'Dancing Script', cursive;
@@ -104,6 +160,7 @@ font-family: 'Shadows Into Light', cursive;
   font-family: 'Indie Flower', cursive;
   font-family: 'Satisfy', cursive;
   font-family: 'Shadows Into Light', cursive;
+  margin-left: 150px;
 }
 
 .visits{
@@ -116,6 +173,7 @@ font-family: 'Shadows Into Light', cursive;
   font-family: 'Indie Flower', cursive;
   font-family: 'Satisfy', cursive;
   font-family: 'Shadows Into Light', cursive;
+  margin-left: 200px;
 }
 
 .technology{
@@ -127,6 +185,7 @@ font-family: 'Shadows Into Light', cursive;
   font-family: 'Indie Flower', cursive;
   font-family: 'Satisfy', cursive;
   font-family: 'Shadows Into Light', cursive;
+  margin-left: 200px;
   }
 
 .Icons{
