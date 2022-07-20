@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './App.css'
 import GetIn from './components/navbar'
+import { useTranslation } from 'react-i18next'
 
 function App() {
   const [count, setCount] = useState(0)
+  const { t } = useTranslation();
 
   return (
     <div className="App">
@@ -12,21 +14,21 @@ function App() {
     <img className="I" src="./I.png" alt="perfil"></img>
     </div>
     <div className='name'>
-      <h1>Naomi Itzel Ramos Rangel</h1>
+      <h1>{t("name")}</h1>
     </div>
     <div className='information'>
-      <p>Cuando termine mi carrera quiero, tener un poco más </p>
-      <p>de experiencia para poder clases a nivel media y media superior.</p>
+      <p>{t("information1")} </p>
+      <p>{t("information2")}</p>
     </div>
       <div className="card">
         <span id="span1"></span>
-        <button onClick={() => setCount((count) => count + 1)}>Contar Visita ></button>
+        <button onClick={() => setCount((count) => count + 1)}>{t("buttonOne")}</button>
       </div>
       <div className='visits'>
-      <p>Contador de Visitas: {count}</p>
+      <p>{t("buttonTwo")}{count}</p>
       </div>
       <div className='technology'>
-        <p>Tecnologías que manejan</p>
+        <p>{t("techonology")}</p>
        </div>
        <div className='Icons'>
        <img className="Icons" src="./Clickup.png" alt="imagen"></img>
